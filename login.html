@@ -2,16 +2,25 @@
 <html>
 <head>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/dropdown.css">
     <title>Login</title>
+    <script src="js/dropdown.js"></script>
 </head>
 
 <body>
     <div class="layout">
         <div class="navbar">
             <a href="./index.html">Home</a>
-            <a href="./login.html">
-                <img src="public/blank_picture.webp" class="profile-image">
-            </a>
+            <input
+                type="image"
+                src="public/blank_picture.webp"
+                class="dropbtn profile-image"
+                onclick="toggleDropDown()">
+            <div id="dropdown" class="dropdown-content">
+                <p>John Doe</p>
+                <p>john.doe@ut.ee</p>
+                <a id="logoutbtn" href="./login.html"><p>Logout</p></a>
+            </div>
         </div>
 
         <div class="generalArea" id="login-form-content">
